@@ -3,6 +3,8 @@ import styled from "styled-components";
 import JsonFunction from "json-function";
 import sortDeepObjectArrays from "sort-deep-object-arrays";
 
+import arraySort from "array-sort";
+
 import { flights } from "../fares";
 import Flights from "./Flights";
 
@@ -67,7 +69,10 @@ export default class Form extends Component {
 
     // Fastest
     if (form.filter == "fast") {
-      results = sortDeepObjectArrays(results);
+      // results = sortDeepObjectArrays(results);
+      //  results = arraySort(results, "duration.h");
+      results = arraySort(results, ["duration.h", "duration.m"]);
+      // console.log(arraySort(results, "duration.h"));
 
       //console.log(JSON.stringify(mySortedObject, null, 2));
       //results = JSON.stringify(mySortedObject, null, 2);

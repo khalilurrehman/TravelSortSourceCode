@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "array-sort": "^1.0.0",
     "bootstrap": "^4.3.1",
+    "deep-sort": "^1.0.4",
     "fast-sort": "^1.5.6",
     "json-function": "^1.8.1",
     "json.sortify": "^2.2.2",
