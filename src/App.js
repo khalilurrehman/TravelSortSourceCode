@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Form from "./components/Form";
+import Flights from "./components/Flights";
+import styled from "styled-components";
+import { flights } from "./fares";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Form flights={flights} />;
 }
+const ProductWrapper = styled.div`
+  margin: 20px;
+  text-align: center;
+`;
+const SpanRight = styled.span`
+  float: right;
+`;
 
 export default App;

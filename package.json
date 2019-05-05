@@ -1,17 +1,30 @@
 {
+  "homepage": "http://khalilurrehman.github.io/TravelSort",
   "name": "search-flight",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^4.3.1",
+    "fast-sort": "^1.5.6",
+    "json-function": "^1.8.1",
+    "json.sortify": "^2.2.2",
     "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.8",
+    "react-bootstrap-toggle": "^2.3.2",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.0"
+    "react-radio-buttons": "^1.2.2",
+    "react-scripts": "3.0.0",
+    "react-simple-radio-button": "^1.0.14",
+    "sort-deep-object-arrays": "^1.1.0",
+    "styled-components": "^4.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +40,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }

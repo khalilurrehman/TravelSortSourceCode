@@ -1,3 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body {
+  background: #332f35;
+  font-family: roboto;
+}
+.btn-primary {
+  background-color: #26cce1 !important;
+  border-color: #26cce1 !important;
+}
+.btn-primary:hover {
+  background-color: #26cce1 !important;
+  border-color: #26cce1 !important;
+}
+.m-32 {
+  margin-top: 32px;
+}
+.w-h {
+  width: 100%;
+}
+.btn-primary:active {
+  background-color: #26cce1 !important;
+  border-color: #26cce1 !important;
+}
+
+input[type="radio"] {
+  position: absolute;
+  visibility: hidden;
+  display: none;
+}
+
+label {
+  color: #9a929e;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 20px;
+  margin-bottom: 0 !important;
+}
+
+input[type="radio"]:checked + label {
+  color: white;
+  background: #26cce1;
+}
+
+label + input[type="radio"] + label {
+  border-left: solid 1p #26cce1;
+}
+.al-c {
+  text-align: center;
+}
+
+.radio-group {
+  border: solid 3px #26cce1;
+  display: inline-block;
+  margin-top: 32px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
 }
